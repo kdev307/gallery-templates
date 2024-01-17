@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                background: linear-gradient(90deg, #cff8cc, #e6fff0);
+            }
+            .item1 {
+                grid-area: leftTop;
+                width: 100%;
+            }
+
+            .item2 {
+                grid-area: leftMid;
+                width: 100%;
+            }
+
+            .item3 {
+                grid-area: leftBottom;
+                width: 100%;
+            }
+
+            .item4 {
+                grid-area: topLeft;
+                width: 100%;
+            }
+
+            .item5 {
+                grid-area: topRight;
+                width: 100%;
+            }
+
+            .item6 {
+                grid-area: bottomLeft;
+                width: 100%;
+            }
+
+            .item7 {
+                grid-area: bottomRight;
+                width: 100%;
+            }
+
+            .item8 {
+                grid-area: rightTop;
+                width: 100%;
+            }
+            .item9 {
+                grid-area: rightMid;
+                width: 100%;
+            }
+            .item10 {
+                grid-area: rightBottom;
+                width: 100%;
+            }
+
+            .grid-container {
+                display: grid;
+                grid-template-columns: repeat(9, 1fr);
+                grid-template-rows: repeat(6, 1fr);
+                grid-template-areas:
+                    "leftTop leftTop topLeft topLeft topLeft topRight topRight rightTop rightTop"
+                    "leftTop leftTop topLeft topLeft topLeft topRight topRight rightTop rightTop"
+                    "leftMid leftMid topLeft topLeft topLeft topRight topRight rightMid rightMid"
+                    "leftMid leftMid bottomLeft bottomLeft bottomRight bottomRight bottomRight rightMid rightMid"
+                    "leftBottom leftBottom bottomLeft bottomLeft bottomRight bottomRight bottomRight rightBottom rightBottom"
+                    "leftBottom leftBottom bottomLeft bottomLeft bottomRight bottomRight bottomRight rightBottom rightBottom";
+                gap: 10px;
+                background-color: #2196f3;
+                padding: 10px;
+            }
+
+            .grid-container > div {
+                background-color: rgba(255, 255, 255, 0.8);
+
+                background: linear-gradient(90deg, #9cc9fc, #e6f0ff);
+                text-align: center;
+                padding: 20px 0;
+                font-size: 30px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Grid Layout</h1>
+
+        <p>This is a Grid gallery of 10 images</p>
+
+        <div class="grid-container">
+            <div class="item1">
+                Left Top
+                <!-- <img src="home/test-background.jpg" alt="" /> -->
+            </div>
+            <div class="item2">
+                Left Mid
+                <!-- <img src="home/test-background.jpg" alt="" /> -->
+            </div>
+            <div class="item3">
+                Left Bottom
+                <!-- <img src="home/test-background.jpg" alt="" /> -->
+            </div>
+            <div class="item4">
+                Top Left
+                <!-- <img src="home/test-background.jpg" alt="" /> -->
+            </div>
+            <div class="item5">
+                Top Right
+                <!-- <img src="home/test-background.jpg" alt="" /> -->
+            </div>
+            <div class="item6">
+                Bottom Left
+                <!-- <img src="home/test-background.jpg" alt="" /> -->
+            </div>
+            <div class="item7">
+                Bottom Right
+                <!-- <img src="home/test-background.jpg" alt="" /> -->
+            </div>
+            <div class="item8">
+                Right Top
+                <!-- <img src="home/test-background.jpg" alt="" /> -->
+            </div>
+            <div class="item9">
+                Right Mid
+                <!-- <img src="home/test-background.jpg" alt="" /> -->
+            </div>
+            <div class="item10">
+                Right Bottom
+                <!-- <img src="home/test-background.jpg" alt="" /> -->
+            </div>
+        </div>
+    </body>
+</html>

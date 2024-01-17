@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                background: linear-gradient(90deg, #cff8cc, #e6fff0);
+            }
+            .item1 {
+                grid-area: headerL;
+            }
+
+            .item2 {
+                grid-area: headerC;
+            }
+
+            .item3 {
+                grid-area: rightbody;
+            }
+
+            .item4 {
+                grid-area: leftbody;
+            }
+
+            .item5 {
+                grid-area: main1;
+            }
+
+            .item6 {
+                grid-area: main2;
+            }
+
+            .item7 {
+                grid-area: footerL;
+            }
+
+            .item8 {
+                grid-area: footerR;
+            }
+
+            .grid-container {
+                display: grid;
+                grid-template-areas:
+                    "headerL headerL headerC headerC rightbody rightbody"
+                    "leftbody leftbody main1 main1 rightbody rightbody"
+                    "leftbody leftbody main2 main2 rightbody rightbody"
+                    "leftbody leftbody footerL footerL footerR footerR";
+                gap: 10px;
+                background-color: #2196f3;
+                padding: 10px;
+            }
+
+            .grid-container > div {
+                background-color: rgba(255, 255, 255, 0.8);
+
+                background: linear-gradient(90deg, #9cc9fc, #e6f0ff);
+                text-align: center;
+                padding: 20px 0;
+                font-size: 30px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Grid Layout</h1>
+
+        <p>This is a Grid gallery of 8 images</p>
+
+        <div class="grid-container">
+            <div class="item1">HeaderL</div>
+            <div class="item2">HeaderC</div>
+            <div class="item3">Right Body</div>
+            <div class="item4">Left Body</div>
+            <div class="item5">Main1</div>
+            <div class="item6">Main2</div>
+            <div class="item7">FooterL</div>
+            <div class="item8">FooterR</div>
+        </div>
+    </body>
+</html>

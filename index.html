@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home</title>
+        <style>
+            ul {
+                list-style-type: none;
+            }
+            a {
+                text-decoration: none;
+            }
+
+            header {
+                color: #333;
+                font-family: monospace;
+            }
+
+            .head {
+                text-align: center;
+                font-weight: 700;
+                font-size: 6.4rem;
+                /* padding: rem; */
+            }
+
+            body {
+                font-family: sans-serif;
+                font-weight: 600;
+                font-size: 1.5rem;
+                background: linear-gradient(90deg, #cff8cc, #e6fff0);
+            }
+
+            main {
+                padding-top: 2.4rem;
+                margin-bottom: 16rem;
+            }
+
+            .grid--4--cols {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+            footer {
+                margin-bottom: 0;
+                padding-bottom: 0;
+            }
+            .credit {
+                font-size: 2rem;
+                font-family: cursive;
+                text-align: center;
+                letter-spacing: 0.2rem;
+                padding: 0.8rem;
+                color: #000000;
+            }
+
+            .credit span {
+                color: red;
+                font-size: 2.4rem;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1 class="head">Grid Templates</h1>
+        </header>
+        <!-- Create buttons so that all the templates get linked to this page. -->
+        <main>
+            <ul class="links grid--4--cols">
+                <li>
+                    <a class="grid-page-link" href="Template1.html" target="_blank"
+                        >Grid Template 1</a
+                    >
+                </li>
+                <li>
+                    <a class="grid-page-link" href="Template2.html" target="_blank"
+                        >Grid Template 2</a
+                    >
+                </li>
+                <li>
+                    <a class="grid-page-link" href="Template3.html" target="_blank"
+                        >Grid Template 3</a
+                    >
+                </li>
+                <li>
+                    <a class="grid-page-link" href="Template4.html" target="_blank"
+                        >Grid Template 4</a
+                    >
+                </li>
+            </ul>
+        </main>
+        <footer>
+            <div class="credit">Created with <span>&#129504;</span> by &dash; KD</div>
+        </footer>
+    </body>
+</html>
